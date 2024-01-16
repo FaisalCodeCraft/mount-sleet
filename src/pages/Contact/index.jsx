@@ -31,7 +31,7 @@ const Contact = () => {
         maxWidth={"md"}
         sx={{  bgcolor: "black", position: "relative" }}
       >
-        <CloseTwoTone fontSize="large" onClick={()=>navigate("/mount_sleet")} sx={{color:"red",ml:"auto",fontWeight:"bold"}} />
+        <CloseTwoTone fontSize="large" onClick={()=>navigate("/home")} sx={{color:"red",ml:"auto",fontWeight:"bold"}} />
         <Box textAlign={"center"} py={{ md: 12 }}>
           <Typography
             variant="h1"
