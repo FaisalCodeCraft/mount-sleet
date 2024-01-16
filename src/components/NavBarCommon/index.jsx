@@ -10,17 +10,14 @@ import Toolbar from "@mui/material/Toolbar";
 import { Button, Container, Typography } from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
 import BookTrailModal from "components/Modal";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBarCommon = () => {
 
-  // const navigate = useNavigate()
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = _ => setMobileOpen((prevState) => !prevState);
-  // function handleDrawerToggle(){
-  //   setMobileOpen((prevState) => !prevState);
-  // }
+  
 
   const drawer = (
     // toggle for small screen
@@ -31,29 +28,29 @@ const NavBarCommon = () => {
     >
       <List>
         <ListItem>
-          <Link to={"/mount_sleet" }sx={{ color: "black", textDecoration: "none" }}>
+          <NavLink to={"/mount_sleet" }sx={{ color: "black", textDecoration: "none" }}>
             Home
-          </Link>
+          </NavLink>
         </ListItem>
         <ListItem>
-          <Link to={"/About"} sx={{ color: "black", textDecoration: "none" }}>
+          <NavLink to={"/About"} sx={{ color: "black", textDecoration: "none" }}>
             About
-          </Link>
+          </NavLink>
         </ListItem>
         <ListItem>
-          <Link to={"/Trails"} sx={{ color: "black", textDecoration: "none" }}>
+          <NavLink to={"/Trails"} sx={{ color: "black", textDecoration: "none" }}>
             Trails
-          </Link>
+          </NavLink>
         </ListItem>
         <ListItem>
-          <Link to={"/News"} sx={{ color: "black", textDecoration: "none" }}>
+          <NavLink to={"/News"} sx={{ color: "black", textDecoration: "none" }}>
             News
-          </Link>
+          </NavLink>
         </ListItem>
         <ListItem>
-          <Link to={"/Contact"} sx={{ color: "black", textDecoration: "none" }}>
+          <NavLink to={"/Contact"} sx={{ color: "black", textDecoration: "none" }}>
             Contact
-          </Link>
+          </NavLink>
         </ListItem>
       </List>
     </Box>
@@ -73,17 +70,15 @@ const NavBarCommon = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Link
+            <NavLink
               variant="h6"
               component="div"
               style={{
                 display: { xs: "none", sm: "none", md: "block" },
                 color: "white", width: "100%", flexGrow: 1
               }}
-              // width={"100%"}
-              // flexGrow={1}
-              // onClick={() => navigate('/Home')}
-              to={"/mount_sleet"}
+              
+              to={"/home"}
           
             >
               <Typography
@@ -98,20 +93,24 @@ const NavBarCommon = () => {
                 fontWeight={700}
                 py={4}
               >
-                <Link
+                <NavLink
                   // onClick={() => navigate('/Home')}
                   to={"/mount_sleet"}
-                  style={{
-                    display: { xs: "none", sm: "none", md: "block" },
-                    color: "white",
-                    textDecoration: "none",
-                  }}
+                  style={
+                    ({ isActive }) => {
+                      return {
+                        display: { xs: "none", sm: "none", md: "block" },
+                        textDecoration: "none",
+                        color:isActive ? "black" : "white",
+                      };
+                    }
+                  }
                 >
                   Mount Sleet{""} <br />
                   <small style={{ fontWeight: 400 }}>Winter Tours</small>
-                </Link>
+                </NavLink>
               </Typography>
-            </Link>
+            </NavLink>
             <List
               sx={{
                 display: { xs: "none", sm: "none", md: "flex" },
@@ -119,40 +118,59 @@ const NavBarCommon = () => {
               }}
             >
               <ListItem>
-                <Link
-                  // onClick={() => navigate('/about')}
+                <NavLink
                   to={"/About"}
-                  style={{ color: "white", textDecoration: "none" }}
+                  style={({ isActive }) => {
+                    return {
+                      textDecoration: "none",
+                      color:isActive ? "orange" : "white",
+                    };
+                  }}
                 >
                   About
-                </Link>
+                </NavLink>
               </ListItem>
               <ListItem>
-                <Link
+                <NavLink
                   // onClick={() => navigate('/trails')}
                   to={"/Trails"}
-                  style={{ color: "white", textDecoration: "none" }}
+                   style={({ isActive }) => {
+                    return {
+                      textDecoration: "none",
+                      color:isActive ? "orange" : "white",
+                    };
+                  }}
                 >
                   Trails
-                </Link>
+                </NavLink>
               </ListItem>
               <ListItem>
-                <Link
+                <NavLink
                   // onClick={() => navigate('/news')}
                   to={"/News"}
-                  style={{ color: "white", textDecoration: "none" }}
+                   style={({ isActive }) => {
+                    return {
+                      textDecoration: "none",
+                      color:isActive ? "orange" : "white",
+                    };
+                  }}
                 >
                   New
-                </Link>
+                </NavLink>
               </ListItem>
               <ListItem>
-                <Link
+                <NavLink
                   // onClick={() => navigate('/contact')}
                   to={"/contact"}
-                  style={{ color: "white", textDecoration: "none" }}
+                   style={({ isActive }) => {
+                    return {
+                      textDecoration: "none",
+                      color:isActive ? "orange" : "white",
+                    };
+                  }}
                 >
                   Contact
-                </Link>
+                </NavLink>
               </ListItem>
             </List>
             <Button color="error" sx={{ display: "flex" }}>
