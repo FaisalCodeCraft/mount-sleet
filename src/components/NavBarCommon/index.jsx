@@ -95,7 +95,7 @@ const NavBarCommon = () => {
               >
                 <NavLink
                   // onClick={() => navigate('/Home')}
-                  to={"/mount_sleet"}
+                  to={"/home"}
                   style={
                     ({ isActive }) => {
                       return {
