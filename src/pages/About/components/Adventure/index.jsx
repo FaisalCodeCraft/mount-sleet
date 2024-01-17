@@ -5,12 +5,13 @@ const Adventure = () => {
   return (
     <Box  mt={2}>
       <Container maxWidth={"md"}>
-        <Grid container>
+        <Grid container >
           <Grid
             item
             md={6}
             bgcolor={"black"}
             color={"white"}
+            display={"flex"}
             px={1.4}
             textAlign={"center"}
             py={{ md: 20 ,xs:3}}
@@ -49,7 +50,6 @@ const Adventure = () => {
               
             }}
           >
-            <Box backgroundImage={"url ()"}></Box>
           </Grid>
         </Grid>
         {/* Grid Container 2 */}

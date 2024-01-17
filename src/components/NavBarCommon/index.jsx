@@ -20,7 +20,6 @@ const NavBarCommon = () => {
   
 
   const drawer = (
-    // toggle for small screen
     <Box
       onClick={() => handleDrawerToggle()}
       sx={{ textAlign: "center" }}
@@ -28,7 +27,7 @@ const NavBarCommon = () => {
     >
       <List>
         <ListItem>
-          <NavLink to={"/mount_sleet" }sx={{ color: "black", textDecoration: "none" }}>
+          <NavLink to={"/home" }sx={{ color: "black", textDecoration: "none" }}>
             Home
           </NavLink>
         </ListItem>
@@ -94,7 +93,6 @@ const NavBarCommon = () => {
                 py={4}
               >
                 <NavLink
-                  // onClick={() => navigate('/Home')}
                   to={"/home"}
                   style={
                     ({ isActive }) => {
@@ -132,7 +130,7 @@ const NavBarCommon = () => {
               </ListItem>
               <ListItem>
                 <NavLink
-                  // onClick={() => navigate('/trails')}
+                  
                   to={"/Trails"}
                    style={({ isActive }) => {
                     return {

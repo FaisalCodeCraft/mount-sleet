@@ -46,6 +46,12 @@ const Hero = () => {
             mt: { md: 3, xs: 1 },
             fontWeight: light,
             px: 3,
+            border:"1px solid white",
+            "&:hover":{
+              bgcolor:"transparent",
+              color:"white",
+              border:"1px solid white"
+            }
           }}
         >
           Book a Trail

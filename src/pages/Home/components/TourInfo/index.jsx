@@ -45,12 +45,17 @@ const TourInfo = () => {
           </Grid>
 
           <Button
-            variant="outlined"
             sx={{
               bgcolor: "white",
               color: "black",
               my: { md: 10, sm: 7, xs: 5 },
               px: "2em",
+              border:"1px solid black",
+              "&:hover":{
+                bgcolor:"black",
+                color:"white",
+                border:"1px solid black"
+              }
             }}
           >
             Learn More

@@ -31,13 +31,11 @@ const Footer = () => {
           <Grid item md={2}>
           <List
               sx={{
-                display: { xs: "none", sm: "none", md: "flex" },
-                p: "1.8em",
+                display: { xs: "none", sm: "none", md: "block" },
               }}
             >
               <ListItem>
                 <Link
-                  // onClick={() => navigate('/about')}
                   to={"/About"}
                   style={{ color: "white", textDecoration: "none" }}
                 >
@@ -46,7 +44,6 @@ const Footer = () => {
               </ListItem>
               <ListItem>
                 <Link
-                  // onClick={() => navigate('/trails')}
                   to={"/Trails"}
                   style={{ color: "white", textDecoration: "none" }}
                 >
@@ -55,7 +52,6 @@ const Footer = () => {
               </ListItem>
               <ListItem>
                 <Link
-                  // onClick={() => navigate('/news')}
                   to={"/News"}
                   style={{ color: "white", textDecoration: "none" }}
                 >
@@ -64,7 +60,6 @@ const Footer = () => {
               </ListItem>
               <ListItem>
                 <Link
-                  // onClick={() => navigate('/contact')}
                   to={"/contact"}
                   style={{ color: "white", textDecoration: "none" }}
                 >
@@ -100,6 +95,11 @@ const Footer = () => {
                 color: "black",
                 px: "1.5em",
                 fontWeight: "light",
+                "&:hover":{
+                  bgcolor:"black",
+                  color:"red",
+                  border:"1px solid red"
+                }
               }}
             >
               Book Now
@@ -124,6 +124,12 @@ const Footer = () => {
             p: { md: ".7em 2em" },
             bgcolor: "red",
             color: "black",
+            border:"1px solid red",
+            "&:hover":{
+              bgcolor:"black",
+              color:"red",
+              border:"1px solid red"
+            }
           }}
         >
           <Chat sx={{mr:2}}/>
