@@ -1,5 +1,5 @@
 import { Email, FavoriteBorder, MoreVert, Visibility } from "@mui/icons-material";
-import { Box, Card, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { SLEET_NEWS_CARD } from "constants/newsCardData";
 import React from "react";
 

@@ -1,4 +1,4 @@
-import { AccountCircle, CloseTwoTone } from "@mui/icons-material";
+import { CloseTwoTone } from "@mui/icons-material";
 import {
   Box,
   Button,
@@ -7,7 +7,6 @@ import {
   Input,
   InputAdornment,
   InputLabel,
-  TextField,
   Typography,
 } from "@mui/material";
 import React from "react";
