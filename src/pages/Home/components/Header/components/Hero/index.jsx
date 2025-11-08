@@ -8,7 +8,7 @@ const Hero = () => {
       <Box position={"absolute"} zIndex={"-1"} width={"100%"} height={"300px"}>
         <img
           src="https://images.pexels.com/photos/709496/pexels-photo-709496.jpeg?cs=srgb&dl=pexels-ph-m-tung-223235-709496.jpg&fm=jpg"
-          alt="header image"
+          alt="header banner"
           width={"100%"}
           style={{ height: { md: "100%" },filter:"brightness(55%)" }}
         />
