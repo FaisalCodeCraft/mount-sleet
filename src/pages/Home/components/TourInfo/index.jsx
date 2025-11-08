@@ -23,9 +23,9 @@ const TourInfo = () => {
             fontWeight={"light"}
             fontSize={{ md: "1em", xs: ".7em" }}
           >
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            Embark on unforgettable winter journeys through snow-covered trails and majestic peaks. 
+            Our expertly guided tours offer the perfect blend of adventure, natural beauty, and 
+            lasting memories that will keep you coming back season after season.
           </Typography>
         </Box>
 

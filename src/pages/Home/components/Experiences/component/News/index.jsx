@@ -22,9 +22,9 @@ const News = () => {
             letterSpacing={{ md: 1 }}
             fontSize={{ md: "1em", sm: "1em", xs: ".7em" }}
           >
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            Stay connected with the latest updates from Mount Sleet. Get trail conditions, 
+            weather forecasts, adventure stories, and insider tips from our expert guides 
+            to enhance your mountain experience.
           </Typography>
         </Box>
 

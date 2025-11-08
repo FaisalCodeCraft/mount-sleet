@@ -30,7 +30,7 @@ const HomeTrails = () => {
                 mt={{ md: 10, sm: 5, xs: 4 }}
                 textAlign={{ xs: "center", md: "left" }}
               >
-                Our Hopme
+                Our Trails
               </Typography>
             </Box>
             {OUR_TRAILS.map((i) => (

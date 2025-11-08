@@ -23,9 +23,9 @@ const Header = () => {
             fontWeight={"light"}
             fontSize={{ md: "1em", xs: ".7em" }}
           >
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            Mount Sleet stands as a testament to nature's grandeur, offering adventurers 
+            unparalleled access to pristine alpine environments. Learn about our mountain's 
+            rich history, diverse ecosystems, and the incredible experiences that await you.
           </Typography>
         </Box>
       </Container>

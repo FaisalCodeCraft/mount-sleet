@@ -23,9 +23,9 @@ const NewsHeader = () => {
             fontWeight={"light"}
             fontSize={{ md: "1em", xs: ".7em" }}
           >
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            Stay updated with the latest news, trail conditions, weather updates, and stories 
+            from Mount Sleet. Discover tips, adventure highlights, and insights from our expert 
+            guides to make the most of your mountain experience.
           </Typography>
         </Box>
       </Container>

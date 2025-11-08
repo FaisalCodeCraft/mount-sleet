@@ -23,9 +23,9 @@ const Header = () => {
             fontWeight={"light"}
             fontSize={{ md: "1em", xs: ".7em" }}
           >
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            Explore our carefully curated selection of mountain trails, each offering unique 
+            challenges and breathtaking scenery. From gentle beginner paths to challenging 
+            expert routes, find the perfect adventure for your skill level.
           </Typography>
         </Box>
       </Container>

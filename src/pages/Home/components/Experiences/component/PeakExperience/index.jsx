@@ -15,17 +15,17 @@ const AutoPlaySwipeableViews = autoPlay(Swipe);
 const PEAK_EXPERIENCE = [
   {
     title:
-      "a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.",
+      "An absolutely incredible experience! The guides were knowledgeable and made us feel safe throughout the entire snowshoeing adventure. The views from the summit were breathtaking, and I'll never forget watching the sunrise over the snow-capped peaks.",
     name: "Jason",
   },
   {
     title:
-      "“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”",
+      "Mount Sleet exceeded all my expectations. The half-day trail was perfect for beginners like me, and the team was patient and encouraging. I can't wait to come back and try the full-day adventure next winter!",
     name: "Chloe",
   },
   {
     title:
-      "“I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you.",
+      "Best mountain adventure I've ever had! The equipment was top-notch, the trails were well-maintained, and the guides shared fascinating stories about the local wildlife and history. Highly recommend to anyone looking for an authentic mountain experience.",
     name: "Tom",
   },
 ];

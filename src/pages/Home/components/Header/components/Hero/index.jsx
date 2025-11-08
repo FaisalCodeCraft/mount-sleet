@@ -6,10 +6,8 @@ const Hero = () => {
   return (
     <Box position={"relative"}>
       <Box position={"absolute"} zIndex={"-1"} width={"100%"} height={"300px"}>
-        <video
-          src="https://player.vimeo.com/external/514984571.sd.mp4?s=056762f6a2a5938d58c8dde8cfb5fbf419c068c2&profile_id=164&oauth2_token_id=57447761"
-          muted
-          autoPlay
+        <img
+          src="https://images.pexels.com/photos/709496/pexels-photo-709496.jpeg?cs=srgb&dl=pexels-ph-m-tung-223235-709496.jpg&fm=jpg"
           width={"100%"}
           style={{ height: { md: "100%" },filter:"brightness(55%)" }}
         />
@@ -33,9 +31,9 @@ const Hero = () => {
           fontWeight={"light"}
           fontSize={{ md: "1em", xs: ".7em" }}
         >
-          I'm a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
+          Discover breathtaking mountain trails and unforgettable winter adventures. 
+          Experience the thrill of snowshoeing, skiing, and exploring pristine alpine landscapes 
+          with expert guides who know every path.
         </Typography>
 
         <Button
